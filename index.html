@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelmageed Ahmed - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Charts Script -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-title {
+            @apply text-3xl font-bold text-gray-800 mb-6;
+        }
+        .card {
+            @apply bg-white rounded-lg shadow-md p-6 mb-4;
+        }
+        .project-card {
+            @apply bg-gray-50 rounded-lg shadow-md p-6 mb-4 hover:bg-gray-100 transition;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-[#402E7A] text-white p-4 sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-[#EEEFE0]">Abdelmageed Ahmed</h1>
+            <div class="space-x-4">
+                <a href="#about" class="relative hover:text-[#3DC2EC] transition-colors duration-300 group">
+                    About
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#4B70F5] to-[#3DC2EC] group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="#education" class="relative hover:text-[#3DC2EC] transition-colors duration-300 group">
+                    Education
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#4B70F5] to-[#3DC2EC] group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="#experience" class="relative hover:text-[#3DC2EC] transition-colors duration-300 group">
+                    Experience
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#4B70F5] to-[#3DC2EC] group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="#projects" class="relative hover:text-[#3DC2EC] transition-colors duration-300 group">
+                    Projects
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#4B70F5] to-[#3DC2EC] group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="#skills" class="relative hover:text-[#3DC2EC] transition-colors duration-300 group">
+                    Skills
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#4B70F5] to-[#3DC2EC] group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="#certifications" class="relative hover:text-[#3DC2EC] transition-colors duration-300 group">
+                    Certifications
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#4B70F5] to-[#3DC2EC] group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="#publications" class="relative hover:text-[#3DC2EC] transition-colors duration-300 group">
+                    Publications
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#4B70F5] to-[#3DC2EC] group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="https://drive.google.com/drive/folders/1lY3ZWjAc2ELhnbx3yp3zHaZM1rz3GRMZ?usp=sharing" class="relative hover:text-[#3DC2EC] transition-colors duration-300 group">
+                    Courses
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#4B70F5] to-[#3DC2EC] group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="#contact" class="relative hover:text-[#3DC2EC] transition-colors duration-300 group">
+                    Contact
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#4B70F5] to-[#3DC2EC] group-hover:w-full transition-all duration-300"></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="relative py-12 bg-gradient-to-r from-[#402E7A] to-[#4B70F5] text-white overflow-hidden">
+        <!-- Particle Canvas -->
+        <canvas id="particle-canvas" class="absolute top-0 left-0 w-full h-full -z-10 pointer-events-none"></canvas>
+
+        <div class="container mx-auto text-center relative z-10">
+            <div class="mb-6">
+                <h2 class="text-4xl font-bold mb-2">
+                    <span id="typewriter" class="border-r-2 border-[#3DC2EC] pr-1"></span>
+                </h2>
+                <p class="text-lg max-w-2xl mx-auto">
+                    Passionate about leveraging AI, machine learning, and data science to solve real-world problems. Experienced in NLP, computer vision, and cloud technologies, with experience in backend development.
+                </p>
+            </div>
+            
+            <!-- Social Links -->
+            <div class="flex justify-center gap-4 flex-wrap">
+        <a href="https://www.linkedin.com/in/abdelmageed-ahmed/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 px-5 py-2 rounded-full bg-white/10 text-white border border-white/20 backdrop-blur-md hover:bg-white/20 transition-all duration-300"
+            aria-label="Visit LinkedIn profile">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5C3.88 3.5 3 4.38 3 5.48s.88 1.98 1.98 1.98A1.99 1.99 0 0 0 6.96 5.48c0-1.1-.88-1.98-1.98-1.98zM3.5 8.98H6.5v12H3.5v-12zM9.5 8.98h2.7v1.6h.04c.38-.72 1.28-1.48 2.64-1.48 2.82 0 3.34 1.86 3.34 4.28v7.6h-3v-6.72c0-1.6-.03-3.66-2.24-3.66-2.24 0-2.58 1.75-2.58 3.54v6.84h-3v-12z"/></svg>
+            LinkedIn
+        </a>
+
+        <a href="https://medium.com/@abdelmageed271"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 px-5 py-2 rounded-full bg-white/10 text-white border border-white/20 backdrop-blur-md hover:bg-white/20 transition-all duration-300"
+            aria-label="Visit Medium profile">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M2 4.5v15h20v-15H2zm17.44 1.98-.95.92a.35.35 0 0 0-.13.33v9.54a.35.35 0 0 0 .13.33l.92.92v.2h-5.6v-.2l.95-.92a.36.36 0 0 0 .14-.33v-7.74l-2.66 9.17h-.36l-3.1-9.17v6.6c-.1.7.2 1.4.77 1.8l1.27 1.53v.2H5.54v-.2l1.27-1.53c.56-.4.85-1.1.74-1.8V7.58a1.6 1.6 0 0 0-.47-1.3l-1.1-1.34v-.2h4.3l3.33 9.3 2.9-9.3h4.23v.2z"/></svg>
+            Medium
+        </a>
+
+        <a href="https://github.com/abdelmageed95"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 px-5 py-2 rounded-full bg-white/10 text-white border border-white/20 backdrop-blur-md hover:bg-white/20 transition-all duration-300"
+            aria-label="Visit GitHub profile">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.87 10.94c.58.1.8-.25.8-.57v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.3-1.69-1.3-1.69-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.05 1.78 2.75 1.27 3.43.97.1-.76.4-1.27.72-1.56-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.28 1.18-3.09-.12-.29-.52-1.46.1-3.05 0 0 .97-.31 3.2 1.18a11.08 11.08 0 0 1 5.83 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.43-2.7 5.41-5.27 5.7.42.37.78 1.1.78 2.22v3.3c0 .32.21.68.81.57A11.5 11.5 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5z"/></svg>
+            GitHub
+        </a>
+        </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script>
+        // Typewriter Effect
+        const roles = ['AI Engineer', 'Agentic AI Engineer', "AI/ML Engineer"];
+        let roleIndex = 0, charIndex = 0, isDeleting = false;
+        const typewriterElement = document.getElementById('typewriter');
+
+        function type() {
+            const currentRole = roles[roleIndex];
+            const text = isDeleting
+                ? currentRole.substring(0, charIndex--)
+                : currentRole.substring(0, charIndex++);
+            if (typewriterElement) typewriterElement.textContent = text;
+            if (!isDeleting && charIndex > currentRole.length) {
+                isDeleting = true;
+                setTimeout(type, 1000);
+            } else if (isDeleting && charIndex < 0) {
+                isDeleting = false;
+                roleIndex = (roleIndex + 1) % roles.length;
+                setTimeout(type, 300);
+            } else {
+                setTimeout(type, isDeleting ? 60 : 120);
+            }
+        }
+        if (typewriterElement) type();
+
+        // Particle Background
+        const canvas = document.getElementById('particle-canvas');
+        if (canvas) {
+            const ctx = canvas.getContext('2d');
+            let animationFrameId;
+            const resizeCanvas = () => {
+                canvas.width = window.innerWidth;
+                canvas.height = canvas.parentElement.offsetHeight;
+            };
+            resizeCanvas();
+
+            const particles = [];
+            class Particle {
+                constructor() {
+                    this.reset();
+                }
+                reset() {
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height;
+                    this.size = Math.random() * 1.5 + 0.5;
+                    this.speedX = Math.random() * 0.3 - 0.15;
+                    this.speedY = Math.random() * 0.3 - 0.15;
+                }
+                update() {
+                    this.x += this.speedX;
+                    this.y += this.speedY;
+                    if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+                    if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+                }
+                draw() {
+                    ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+            }
+            for (let i = 0; i < 40; i++) particles.push(new Particle());
+
+            function animateParticles() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                particles.forEach(p => {
+                    p.update();
+                    p.draw();
+                });
+                animationFrameId = requestAnimationFrame(animateParticles);
+            }
+            animateParticles();
+            window.addEventListener('resize', resizeCanvas);
+            window.addEventListener('unload', () => cancelAnimationFrame(animationFrameId));
+        }
+    </script>
+    
+    <!-- Education Section -->
+    <section id="education" class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b pb-2">Education</h2>
+            <div class="relative border-l-4 border-blue-500 pl-6 space-y-8">
+                <div class="card relative">
+                    <div class="absolute -left-9 top-2 w-4 h-4 bg-blue-500 rounded-full"></div>
+                    <h3 class="text-xl font-semibold text-gray-900">Master's Degree in Electrical and Computer Engineering</h3>
+                    <p class="text-gray-600 text-sm mt-1">Ottawa University, Ottawa, Canada | 2022</p>
+                    <p class="mt-2 text-gray-700">Major: AI / Data Science</p>
+                    <p class="text-gray-600">Coursework: ML, NLP, Big Data and Cloud Computing, DL, Computer Vision, AI for Cyber Security, Smart Cities Technologies</p>
+                    <a href="degrees/masters-degree.html" class="text-blue-600 hover:text-blue-800 font-medium mt-3 inline-block">View Degree</a>
+                </div>
+                <div class="card relative">
+                    <div class="absolute -left-9 top-2 w-4 h-4 bg-blue-500 rounded-full"></div>
+                    <h3 class="text-xl font-semibold text-gray-900">Bachelor's Degree in Biomedical Engineering</h3>
+                    <p class="text-gray-600 text-sm mt-1">Minya University, Elminya, Egypt | 2019</p>
+                    <p class="text-gray-600">Coursework: Bio signals, Image Processing, Digital Electronics, Medical Instruments, Deep Learning</p>
+                    <a href="degrees/bachelors-degree.html" class="text-blue-600 hover:text-blue-800 font-medium mt-3 inline-block">View Degree</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section with Timeline -->
+    <section id="experience" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b pb-2">Work Experience</h2>
+
+            <!-- Career Timeline -->
+            <div class="mb-12">
+                <!-- make "Career Timeline" bold and centered -->
+                <h3 class="text-xl font-bold text-gray-800 m" style="text-align: center;">Career Timeline</h3>
+                
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <div id="career-timeline" class="w-full h-[300px]"></div>
+                </div>
+
+                <script type="text/javascript">
+                    google.charts.load("current", { packages: ["timeline"] });
+                    google.charts.setOnLoadCallback(drawChart);
+
+                    function drawChart() {
+                    var container = document.getElementById('career-timeline');
+                    var chart = new google.visualization.Timeline(container);
+                    var dataTable = new google.visualization.DataTable();
+
+                    dataTable.addColumn({ type: 'string', id: 'Role' });
+                    dataTable.addColumn({ type: 'string', id: 'Name' });
+                    dataTable.addColumn({ type: 'date', id: 'Start' });
+                    dataTable.addColumn({ type: 'date', id: 'End' });
+
+                    dataTable.addRows([
+                        [ 'AI and Backend Engineer', 'Entronix', new Date(2024, 0, 1), new Date() ],
+                        [ 'AI Engineer', 'GAIA', new Date(2022, 4, 1), new Date(2024, 0, 1) ],
+                        [ 'Course Creator', 'Udemy', new Date(2023, 3, 1), new Date(2023, 10, 1) ],
+                        [ 'ML Engineer Intern', 'Microsoft', new Date(2022, 0, 1), new Date(2022, 4, 1) ],
+                        [ "Master's Degree Student", 'Ottawa University', new Date(2021, 4, 1), new Date(2022, 5, 1) ],
+                        [ 'Machine Learning Freelancer', 'Upwork', new Date(2021, 0, 1), new Date(2022, 5, 1) ],
+                    ]);
+
+                    var options = {
+                        timeline: { groupByRowLabel: true },
+                        colors: ['#1d4ed8', '#2563eb', '#3b82f6', '#60a5fa'],
+                        backgroundColor: '#f9fafb',
+                        height: 300,
+                        width: container.offsetWidth, // 👈 dynamically set width
+                        hAxis: {
+                            minValue: new Date(2021, 0, 1),
+                            maxValue: new Date(2025, 11, 31)
+                        }
+                    };
+
+                    chart.draw(dataTable, options);
+                }
+
+                </script>
+            </div>
+
+            <!-- Work Experience Details -->
+
+            <div class="relative border-l-4 border-indigo-500 pl-8 space-y-16">
+
+            <!-- Entronix -->
+            <div class="relative">
+                <div class="absolute -left-[13px] top-1.5 w-6 h-6 bg-indigo-500 rounded-full border-4 border-white"></div>
+                <div class="bg-white shadow-md p-6 rounded-2xl">
+                <h3 class="text-xl font-semibold text-gray-800">AI and Backend Engineer</h3>
+                <p class="text-sm text-gray-500 mt-1">
+                    <a href="https://entronix.io/" target="_blank" class="text-blue-600 hover:underline">Entronix</a> · USA · Jan 2024 – Present
+                </p>
+                <p class="mt-3 text-gray-700 leading-relaxed">
+                    Leading a small team to develop AI-powered solutions for asset management and Building Automation Systems (BAS), integrating data engineering and backend APIs.
+                </p>
+                </div>
+            </div>
+
+            <!-- GAIA -->
+            <div class="relative">
+                <div class="absolute -left-[13px] top-1.5 w-6 h-6 bg-indigo-500 rounded-full border-4 border-white"></div>
+                <div class="bg-white shadow-md p-6 rounded-2xl">
+                <h3 class="text-xl font-semibold text-gray-800">AI Engineer</h3>
+                <p class="text-sm text-gray-500 mt-1">
+                    <a href="https://meetgaia.ai/" target="_blank" class="text-blue-600 hover:underline">GAIA</a> · UAE · May 2022 – Jan 2024
+                </p>
+                <p class="mt-3 text-gray-700 leading-relaxed">
+                    Designed and deployed a vision-based AI system to detect safety violations on industrial rigs in real-time, increasing operational compliance.
+                </p>
+                </div>
+            </div>
+
+            <!-- Udemy -->
+            <div class="relative">
+                <div class="absolute -left-[13px] top-1.5 w-6 h-6 bg-indigo-500 rounded-full border-4 border-white"></div>
+                <div class="bg-white shadow-md p-6 rounded-2xl">
+                <h3 class="text-xl font-semibold text-gray-800">Course Creator</h3>
+                <p class="text-sm text-gray-500 mt-1">
+                    <a href="https://www.udemy.com/course/mastering-ai-with-transformers-and-llms" target="_blank" class="text-blue-600 hover:underline">Udemy</a> · Apr 2023 – Nov 2023
+                </p>
+                <p class="mt-3 text-gray-700 leading-relaxed">
+                    Produced <span class="italic">“AI with LLMs and Transformers: From Theory to Deployment – 2025”</span>, a comprehensive course on building production-ready AI.
+                </p>
+                </div>
+            </div>
+
+            <!-- Microsoft -->
+            <div class="relative">
+                <div class="absolute -left-[13px] top-1.5 w-6 h-6 bg-indigo-500 rounded-full border-4 border-white"></div>
+                <div class="bg-white shadow-md p-6 rounded-2xl">
+                <h3 class="text-xl font-semibold text-gray-800">ML Engineer Intern</h3>
+                <p class="text-sm text-gray-500 mt-1">Microsoft · Jan 2022 – May 2022</p>
+                <p class="mt-3 text-gray-700 leading-relaxed">
+                    Supported NLP model optimization and experimentation to improve language understanding across Microsoft products.
+                </p>
+                </div>
+            </div>
+
+            <!-- Ottawa -->
+            <div class="relative">
+                <div class="absolute -left-[13px] top-1.5 w-6 h-6 bg-indigo-500 rounded-full border-4 border-white"></div>
+                <div class="bg-white shadow-md p-6 rounded-2xl">
+                <h3 class="text-xl font-semibold text-gray-800">Master’s Degree Student</h3>
+                <p class="text-sm text-gray-500 mt-1">Ottawa University · Canada · Apr 2021 – May 2022</p>
+                <p class="mt-3 text-gray-700 leading-relaxed">
+                    Implemented AI and data science solutions in project-based coursework, with emphasis on real-world deployments.
+                </p>
+                </div>
+            </div>
+
+            <!-- Upwork -->
+            <div class="relative">
+                <div class="absolute -left-[13px] top-1.5 w-6 h-6 bg-indigo-500 rounded-full border-4 border-white"></div>
+                <div class="bg-white shadow-md p-6 rounded-2xl">
+                <h3 class="text-xl font-semibold text-gray-800">Machine Learning Freelancer</h3>
+                <p class="text-sm text-gray-500 mt-1">Upwork · Remote · Jan 2021 – May 2022</p>
+                <p class="mt-3 text-gray-700 leading-relaxed">
+                    Delivered end-to-end ML solutions for clients across healthcare, finance, and retail, with hands-on implementation of models and deployment pipelines.
+                </p>
+                </div>
+            </div>
+
+            </div>
+  </div>
+
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gradient-to-b from-gray-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Technical Expertise</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Agentic AI -->
+                <div class="skill-card group">
+                    <div class="skill-icon bg-blue-100 text-blue-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">Agentic AI</h3>
+                    <div class="flex flex-wrap gap-2 p-4 bg-gray-100 rounded-lg">
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">LangGraph</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Langchain</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">RAG</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">LlamaIndex</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">AutoGen</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">LangSmith</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Flowise</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">8n8</span>
+
+                    </div>
+                </div>
+
+                <!-- AI/LLMs -->
+                <div class="skill-card group">
+                    <div class="skill-icon bg-[#4B70F5]/20 text-[#4C3BCF] group-hover:text-[#3DC2EC]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-[#4C3BCF] transition-colors">AI/LLMs</h3>
+                    <div class="flex flex-wrap gap-2 p-4 bg-gray-100 rounded-lg">
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Transformer Models</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">OpenAI APIs</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Hugging Face</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Grok</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Mistral</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Llama</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Ollama</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Fine-tuning</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">PEFT/LoRA</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Prompt Engineering</span>
+                    </div>
+                </div>
+
+                <!-- NLP Tools -->
+                <div class="skill-card group">
+                    <div class="skill-icon bg-green-100 text-green-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-green-600 transition-colors">NLP Tools</h3>
+                    <div class="flex flex-wrap gap-2 p-4 bg-gray-100 rounded-lg">
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Transformers</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">RNN</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">LSTM</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">SpaCy</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">NLTK</span>
+                    </div>
+                </div>
+
+                <!-- Data Science -->
+                <div class="skill-card group">
+                    <div class="skill-icon bg-purple-100 text-purple-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-purple-600 transition-colors">Data Science</h3>
+                    <div class="flex flex-wrap gap-2 p-4 bg-gray-100 rounded-lg">
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Pandas</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">NumPy</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Linear Algebra</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Calculus</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Statistics</span>
+                    </div>
+                </div>
+
+                <!-- Machine/Deep Learning -->
+                <div class="skill-card group">
+                    <div class="skill-icon bg-red-100 text-red-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-red-600 transition-colors">ML/DL</h3>
+                    <div class="flex flex-wrap gap-2 p-4 bg-gray-100 rounded-lg">
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">SkLearn</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Keras</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">TensorFlow</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">PyTorch</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Transfer Learning</span>
+                    </div>
+                </div>
+
+                <!-- Computer Vision -->
+                <div class="skill-card group">
+                    <div class="skill-icon bg-yellow-100 text-yellow-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-yellow-600 transition-colors">Computer Vision</h3>
+                    <div class="flex flex-wrap gap-2 p-4 bg-gray-100 rounded-lg2">
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Vision Transformers</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">YOLO</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Diffusion Models</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">OpenCV</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">SkImage</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">CNN</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">GANs</span>
+                    </div>
+                </div>
+
+                <!-- Deployment -->
+                <div class="skill-card group">
+                    <div class="skill-icon bg-indigo-100 text-indigo-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-indigo-600 transition-colors">Deployment</h3>
+                    <div class="flex flex-wrap gap-2 p-4 bg-gray-100 rounded-lg">
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Docker</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Kubernetes</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">FastAPI</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Flask</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Heroku</span>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-card group">
+                    <div class="skill-icon bg-pink-100 text-pink-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-pink-600 transition-colors">Databases</h3>
+                    <div class="flex flex-wrap gap-2 p-4 bg-gray-100 rounded-lg">
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Postgres</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">MongoDB</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">MySQL</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Redis</span>
+                    </div>
+                </div>
+
+                <!-- Vector Databases -->
+                <div class="skill-card group">
+                    <div class="skill-icon bg-cyan-100 text-cyan-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-cyan-600 transition-colors">Vector DBs</h3>
+                    <div class="flex flex-wrap gap-2 p-4 bg-gray-100 rounded-lg">
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Pinecone</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Faiss</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Elasticsearch</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">ChromaDB</span>
+                    </div>
+                </div>
+
+                <!-- Cloud -->
+                <div class="skill-card group">
+                    <div class="skill-icon bg-[#3DC2EC]/20 text-[#4C3BCF] group-hover:text-[#4B70F5]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-[#4C3BCF] transition-colors">Cloud</h3>
+                    <div class="flex flex-wrap gap-2 p-4 bg-gray-100 rounded-lg">
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">AWS</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Azure</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">GCP</span>
+                        <span class="skill-tag px-3 py-1 bg-white text-gray-700 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-200">Azure Functions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+   <section id="projects" class="py-20 bg-gradient-to-b from-gray-50 to-blue-50 relative overflow-hidden">
+    <div class="container mx-auto px-4 max-w-5xl">
+        <h2 class="text-5xl font-serif font-bold text-gray-800 mb-16 text-center tracking-tight relative z-10">
+            <span class="relative inline-block">
+                My Projects
+                <span class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-blue-300 to-purple-300 opacity-50 transition-all duration-500 group-hover:opacity-100"></span>
+            </span>
+        </h2>
+        <div class="relative z-10">
+            <div class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-blue-200 to-purple-200 h-full overflow-hidden">
+                <div class="absolute w-full h-20 bg-gradient-to-b from-transparent via-white to-transparent opacity-30 animate-shimmer"></div>
+            </div>
+            <div class="space-y-16">
+                <!-- AI Insights -->
+                <div class="project-card relative flex items-start">
+                    <div class="w-1/2 pr-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-lg transform transition-all duration-500 ease-out relative border-t-4 border-blue-300 group hover:scale-105 hover:shadow-xl hover:border-blue-400">
+                            <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 opacity-0 group-hover:opacity-30 rounded-2xl transition-opacity duration-500"></div>
+                            <div class="absolute top-4 right-4 w-8 h-8 text-blue-300 group-hover:text-blue-500 transition-colors duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-gray-900 font-serif">AI Insights</h3>
+                            <p class="text-gray-500 text-sm mt-2">Entronix</p>
+                            <p class="mt-4 text-gray-600 leading-relaxed"><strong>Built an AI system generating tags, insights, and summary reports for asset management.</strong> <br>
+                                            • Generate tags in real time for Incoming entries for Internal platform for workers/employees at MCCNO
+                                            Convention center for daily assets/instruments checks, preventive maintenance, repairs and shift handovers,
+                                            save entries with tags and relevance scores for pre-defined questions for insights on <strong>MongoDB</strong> <br>
+                                            • Filter entries and use <strong>OpenAI API</strong> (embeddings and gpt4.1-Nano) to generate Insights and summary reports with <strong> Prompt Engineering</strong></p>
+                            <div class="flex flex-wrap gap-3 mt-5">
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    OpenAI API
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Retrieval-Augmented Generation</span>
+                                </span>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    Langchain
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Framework for LLM Apps</span>
+                                </span>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    Mongodb
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Database</span>
+                                </span>
+                            </div>
+                            <!--
+                            <a href="ai-insights.html" class="text-blue-500 hover:text-blue-700 font-medium mt-5 inline-block relative group/link">
+                                Explore Project
+                                <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover/link:w-full transition-all duration-300"></span>
+                            </a>
+                            -->
+                        </div>
+                    </div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-blue-300 rounded-full border-4 border-white group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-400 transition-colors duration-500"></div>
+                    <div class="w-1/2 pl-8"></div>
+                </div>
+                <!-- Safety Violation Detection System -->
+                <div class="project-card relative flex items-start flex-row-reverse">
+                    <div class="w-1/2 pl-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-lg transform transition-all duration-500 ease-out relative border-t-4 border-purple-300 group hover:scale-105 hover:shadow-xl hover:border-purple-400">
+                            <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 opacity-0 group-hover:opacity-30 rounded-2xl transition-opacity duration-500"></div>
+                            <div class="absolute top-4 right-4 w-8 h-8 text-purple-300 group-hover:text-purple-500 transition-colors duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-gray-900 font-serif">Safety Violation Detection System</h3>
+                            <p class="text-gray-500 text-sm mt-2">GAIA</p>
+                            <p class="mt-4 text-gray-600 leading-relaxed"><strong>Developed a YOLO-based object detection system for real-time safety violation alerts in rigs.</strong></p>
+                            <div class="flex flex-wrap gap-3 mt-5">
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    YOLO
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Object Detection Model</span>
+                                </span>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    Computer Vision
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Visual Data Analysis</span>
+                                </span>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=yXEOy6cKgT4" class="text-blue-500 hover:text-blue-700 font-medium mt-5 inline-block relative group/link">
+                                View Demo
+                                <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover/link:w-full transition-all duration-300"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-purple-300 rounded-full border-4 border-white group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-400 transition-colors duration-500"></div>
+                    <div class="w-1/2 pr-8"></div>
+                </div>
+                <!-- Marketing Guru Chatbot -->
+                <div class="project-card relative flex items-start">
+                    <div class="w-1/2 pr-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-lg transform transition-all duration-500 ease-out relative border-t-4 border-blue-300 group hover:scale-105 hover:shadow-xl hover:border-blue-400">
+                            <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 opacity-0 group-hover:opacity-30 rounded-2xl transition-opacity duration-500"></div>
+                            <div class="absolute top-4 right-4 w-8 h-8 text-blue-300 group-hover:text-blue-500 transition-colors duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8s-9-3.582-9-8 4.03-8 9-8 9 3.582 9 8z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-gray-900 font-serif">Marketing Guru Chatbot</h3>
+                            <p class="text-gray-500 text-sm mt-2">Agentic AI - Freelancing Project</p>
+                            <p class="mt-4 text-gray-600 leading-relaxed"> <strong>AI-powered chatbot using Llama3 and Langchain to predict customer churn with logistic regression.</strong><br>
+                            • Built an AI Agent with LangGraph Framework that use GPT4.1-Nano as LLM and Logistic Regression as a Tool </p>
+                            <div class="flex flex-wrap gap-3 mt-5">
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    GPT4
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Large Language Model</span>
+                                </span>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    Langchain
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Framework for LLM Apps</span>
+                                </span>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    LangGraph
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Framework for Agentic Apps</span>
+                                </span>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    Logistic Regression
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">ML Model</span>
+                                </span>
+                            </div>
+                            <a href="https://github.com/abdelmageed95/Marketing-guru-Chatbot-with-Llama3-langchain-and-Logistic-Regression" class="text-blue-500 hover:text-blue-700 font-medium mt-5 inline-block relative group/link">
+                                GitHub Repo
+                                <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover/link:w-full transition-all duration-300"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-blue-300 rounded-full border-4 border-white group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-400 transition-colors duration-500"></div>
+                    <div class="w-1/2 pl-8"></div>
+                </div>
+
+                <!-- The Power of Knowledge: Building Knowledge Base -->
+                <div class="project-card relative flex items-start flex-row-reverse">
+                    <div class="w-1/2 pl-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-lg transform transition-all duration-500 ease-out relative border-t-4 border-purple-300 group hover:scale-105 hover:shadow-xl hover:border-purple-400">
+                            <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 opacity-0 group-hover:opacity-30 rounded-2xl transition-opacity duration-500"></div>
+                            <div class="absolute top-4 right-4 w-8 h-8 text-purple-300 group-hover:text-purple-500 transition-colors duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-gray-900 font-serif">The Power of Knowledge: Building Knowledge Base</h3>
+                            <p class="text-gray-500 text-sm mt-2">Team Leader - Sponsored by Microsoft Egypt, Ottawa University, and MCIT Egypt</p>
+                            <p class="mt-4 text-gray-600 leading-relaxed"><strong>Built a tool that extracts facts from unstructured text and generates RDF triplets, using Regex, OpenNRE, Coreference Resolution, NER, Web Scraping, and SPARQL for querying Wikipedia articles, infoboxes, and tables.</strong></p>
+                            <div class="flex flex-wrap gap-3 mt-5">
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    Regex
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Regular Expressions</span>
+                                </span>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    OpenNRE
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Relation Extraction</span>
+                                </span>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    Coreference Resolution
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">NLP Technique</span>
+                                </span>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    NER
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Named Entity Recognition</span>
+                                </span>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    Web Scraping
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Data Extraction</span>
+                                </span>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    SPARQL
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Query Language</span>
+                                </span>
+                            </div>
+                            <div class="mt-5 flex gap-4">
+                                
+                                <a href="https://drive.google.com/file/d/17SqjTu3JemzF23iEj3GY1-BSd2BM6nEB/view" class="text-blue-500 hover:text-blue-700 font-medium inline-block relative group/link">
+                                    View Paper
+                                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover/link:w-full transition-all duration-300"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-purple-300 rounded-full border-4 border-white group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-400 transition-colors duration-500"></div>
+                    <div class="w-1/2 pr-8"></div>
+                </div>
+
+                <!-- Speech To Speech Arabic - English Real-Time Translation -->
+                <div class="project-card relative flex items-start">
+                    <div class="w-1/2 pr-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-lg transform transition-all duration-500 ease-out relative border-t-4 border-blue-300 group hover:scale-105 hover:shadow-xl hover:border-blue-400">
+                            <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 opacity-0 group-hover:opacity-30 rounded-2xl transition-opacity duration-500"></div>
+                            <div class="absolute top-4 right-4 w-8 h-8 text-blue-300 group-hover:text-blue-500 transition-colors duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-gray-900 font-serif">Speech To Speech Arabic - English Real-Time Translation</h3>
+                            <p class="text-gray-500 text-sm mt-2">Personal Project</p>
+                            <p class="mt-4 text-gray-600 leading-relaxed"><strong>Developed a real-time translation system using Whisper for speech-to-text, fine-tuned T5 Transformer for text translation, and fine-tuned Tacotron2 for text-to-speech, with socket programming in Python for client-server communication.</strong></p>
+                            <div class="flex flex-wrap gap-3 mt-5">
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    Whisper
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Speech-to-Text Model</span>
+                                </span>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    T5 Transformer
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Text Translation Model</span>
+                                </span>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    Tacotron2
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Text-to-Speech Model</span>
+                                </span>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    Socket Programming
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Real-Time Communication</span>
+                                </span>
+                            </div>
+                            <div class="mt-5 flex gap-4">
+                                <a href="https://www.youtube.com/watch?v=ND8K7aS480U" class="text-blue-500 hover:text-blue-700 font-medium inline-block relative group/link">
+                                    View Demo
+                                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover/link:w-full transition-all duration-300"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-blue-300 rounded-full border-4 border-white group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-400 transition-colors duration-500"></div>
+                    <div class="w-1/2 pl-8"></div>
+                </div>
+                  <!-- AI for Cybersecurity -->
+                <div class="project-card relative flex items-start flex-row-reverse">
+                    <div class="w-1/2 pl-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-lg transform transition-all duration-500 ease-out relative border-t-4 border-purple-300 group hover:scale-105 hover:shadow-xl hover:border-purple-400">
+                            <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 opacity-0 group-hover:opacity-30 rounded-2xl transition-opacity duration-500"></div>
+                            <div class="absolute top-4 right-4 w-8 h-8 text-purple-300 group-hover:text-purple-500 transition-colors duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-gray-900 font-serif">Synthesis of Adversarial DDOS Attacks Using Tabular GANs</h3>
+                            <p class="text-gray-500 text-sm mt-2">Team Leader - Ottawa University - AI for cybersecurity project</p>
+                            <p class="mt-4 text-gray-600 leading-relaxed"><strong>Create Network Intrusion Detection Systems (NIDS) that detect incoming malicious traffic on real time using Random
+Forest and Kafka and evaluate the system using new artificial malicious traffic using Tabular GANs</strong></p>
+                            <div class="flex flex-wrap gap-3 mt-5">
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    Kafka
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Regular Expressions</span>
+                                </span>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    GAN
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Relation Extraction</span>
+                                </span>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    Random Forest
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">NLP Technique</span>
+                                </span>
+                            </div>
+                            <div class="mt-5 flex gap-4">
+                                <a href="https://github.com/abdelmageed95/Synthesis-of-Adversarial-DDos-Attacks-Using-Tabular-Generative-Adversarial-Networks" class="text-blue-500 hover:text-blue-700 font-medium inline-block relative group/link">
+                                    GitHub Repo
+                                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover/link:w-full transition-all duration-300"></span>
+                                </a>
+                                <a href="https://paperswithcode.com/paper/synthesis-of-adversarial-ddos-attacks-using" class="text-blue-500 hover:text-blue-700 font-medium inline-block relative group/link">
+                                    View Paper
+                                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover/link:w-full transition-all duration-300"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-purple-300 rounded-full border-4 border-white group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-400 transition-colors duration-500"></div>
+                    <div class="w-1/2 pr-8"></div>
+                </div>
+                <!-- Smart Environment Eye [SEE] -->
+                <div class="project-card relative flex items-start">
+                    <div class="w-1/2 pr-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-lg transform transition-all duration-500 ease-out relative border-t-4 border-blue-300 group hover:scale-105 hover:shadow-xl hover:border-blue-400">
+                            <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 opacity-0 group-hover:opacity-30 rounded-2xl transition-opacity duration-500"></div>
+                            <div class="absolute top-4 right-4 w-8 h-8 text-blue-300 group-hover:text-blue-500 transition-colors duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z M2.458 12C3.732 7.943 7.522 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.478 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-gray-900 font-serif">Smart Environment Eye [SEE]</h3>
+                            <p class="text-gray-500 text-sm mt-2">Team Leader</p>
+                            <p class="mt-4 text-gray-600 leading-relaxed"><strong>Built an object detection app with YOLOv7 to detect 11 types of visual pollutants in real-time.</strong></p>
+                            <div class="flex flex-wrap gap-3 mt-5">
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    YOLOv7
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Object Detection Model</span>
+                                </span>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    Computer Vision
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Visual Data Processing</span>
+                                </span>
+                            </div>
+                            <div class="mt-5 flex gap-4">
+                                <a href="https://github.com/abdelmageed95/SEE" class="text-blue-500 hover:text-blue-700 font-medium inline-block relative group/link">
+                                    GitHub Repo
+                                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover/link:w-full transition-all duration-300"></span>
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=YcwFNqkJR9I" class="text-blue-500 hover:text-blue-700 font-medium inline-block relative group/link">
+                                    View Demo
+                                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover/link:w-full transition-all duration-300"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-blue-300 rounded-full border-4 border-white group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-400 transition-colors duration-500"></div>
+                    <div class="w-1/2 pl-8"></div>
+                </div>
+                
+                </div>
+                <!-- Leukemia Detection -->
+                <div class="project-card relative flex items-start flex-row-reverse">
+                    <div class="w-1/2 pl-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-lg transform transition-all duration-500 ease-out relative border-t-4 border-purple-300 group hover:scale-105 hover:shadow-xl hover:border-purple-400">
+                            <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 opacity-0 group-hover:opacity-30 rounded-2xl transition-opacity duration-500"></div>
+                            <div class="absolute top-4 right-4 w-8 h-8 text-purple-300 group-hover:text-purple-500 transition-colors duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-gray-900 font-serif">Leukemia Detection</h3>
+                            <p class="text-gray-500 text-sm mt-2">Bachelor Graduation Project - 2019</p>
+                            <p class="mt-4 text-gray-600 leading-relaxed"><strong>Image classification system using CNNs to detect cancerous cells in blood smear images.</strong></p>
+                            <div class="flex flex-wrap gap-3 mt-5">
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    CNN
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Convolutional Neural Network</span>
+                                </span>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 hover:shadow-md transition-all duration-300">
+                                    Image Processing
+                                    <span class="absolute hidden group-hover/tag:block bg-gray-800 text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Visual Data Analysis</span>
+                                </span>
+                            </div>
+                            <div class="mt-5 flex gap-4">
+                                <a href="https://github.com/abdelmageed95/Leukemai-detection-using-deep-learning" class="text-blue-500 hover:text-blue-700 font-medium inline-block relative group/link">
+                                    GitHub Repo
+                                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover/link:w-full transition-all duration-300"></span>
+                                </a>
+                                <a href="https://drive.google.com/file/d/1B-7JOfpFwgRq9kChoV_Vs0EJpuE9K6iz/view" class="text-blue-500 hover:text-blue-700 font-medium inline-block relative group/link">
+                                    Paper
+                                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover/link:w-full transition-all duration-300"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-purple-300 rounded-full border-4 border-white group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-400 transition-colors duration-500"></div>
+                    <div class="w-1/2 pr-8"></div>
+                </div>
+        </div>
+    </div>
+    <style>
+        @keyframes shimmer {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(100%); }
+        }
+        .animate-shimmer {
+            animation: shimmer 3s infinite linear;
+        }
+    </style>
+    </section>
+    
+    <style>
+        .skill-card {
+            @apply bg-white p-6 rounded-xl shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md hover:border-transparent;
+        }
+        
+        .skill-icon {
+            @apply w-12 h-12 rounded-full flex items-center justify-center mb-4 transition-all duration-300;
+        }
+        
+        .skill-tag {
+            @apply bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full transition-all duration-200 hover:bg-blue-100 hover:text-blue-600;
+        }
+        
+        .skill-card:hover .skill-icon {
+            @apply transform scale-110;
+        }
+    </style>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-20 bg-gradient-to-b from-gray-100 to-white relative">
+    <div class="container mx-auto px-4 max-w-6xl">
+        <h2 class="text-5xl font-serif font-bold text-[#402E7A] mb-16 text-center tracking-tight relative">
+            <span class="relative inline-block">
+                Certifications
+                <span class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-[#4B70F5] to-[#3DC2EC] opacity-70"></span>
+            </span>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <div class="cert-card bg-white/70 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-gray-100/50 transform transition-all duration-500 ease-out opacity-0 animate-fade-in group hover:shadow-2xl hover:border-[#4B70F5]/30" style="animation-delay: 0.1s;">
+                <div class="absolute top-4 right-4 w-8 h-8 text-[#4C3BCF] group-hover:text-[#3DC2EC] transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                </div>
+                <p class="text-xl font-semibold text-[#402E7A] font-serif">DELL, Data Science & Big Data Analytics Specialty</p>
+                <p class="text-gray-500 text-sm mt-2">July 2021</p>
+                <div class="flex flex-wrap gap-3 mt-4">
+                    <span class="px-3 py-1 bg-[#4B70F5]/10 text-[#4C3BCF] text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-[#4B70F5]/20 hover:to-[#3DC2EC]/20 hover:shadow-sm transition-all duration-300">
+                        Data Science
+                        <span class="absolute hidden group-hover/tag:block bg-[#402E7A] text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Big Data Analytics</span>
+                    </span>
+                </div>
+                <a href="https://www.credly.com/badges/f2121a13-baf2-4a38-a7c2-7860068996d7/public_url" class="text-[#4B70F5] hover:text-[#3DC2EC] font-medium mt-4 inline-block relative group/link">
+                    View Certificate
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#4B70F5] to-[#3DC2EC] group-hover/link:w-full transition-all duration-300"></span>
+                </a>
+            </div>
+            <div class="cert-card bg-white/70 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-gray-100/50 transform transition-all duration-500 ease-out opacity-0 animate-fade-in group hover:shadow-2xl hover:border-[#4B70F5]/30" style="animation-delay: 0.2s;">
+                <div class="absolute top-4 right-4 w-8 h-8 text-[#4C3BCF] group-hover:text-[#3DC2EC] transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <p class="text-xl font-semibold text-[#402E7A] font-serif">Deep Learning.AI: TensorFlow Developer Professional Certificate</p>
+                <p class="text-gray-500 text-sm mt-2">Apr 2021</p>
+                <div class="flex flex-wrap gap-3 mt-4">
+                    <span class="px-3 py-1 bg-[#4B70F5]/10 text-[#4C3BCF] text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-[#4B70F5]/20 hover:to-[#3DC2EC]/20 hover:shadow-sm transition-all duration-300">
+                        TensorFlow
+                        <span class="absolute hidden group-hover/tag:block bg-[#402E7A] text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Deep Learning Framework</span>
+                    </span>
+                </div>
+                <a href="tensorflow-certificate.html" class="text-[#4B70F5] hover:text-[#3DC2EC] font-medium mt-4 inline-block relative group/link">
+                    View Certificate
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#4B70F5] to-[#3DC2EC] group-hover/link:w-full transition-all duration-300"></span>
+                </a>
+            </div>
+            <!-- AWS: Machine Learning Specialty Training | Apr 2021 | AWS-->
+              <div class="cert-card bg-white/70 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-gray-100/50 transform transition-all duration-500 ease-out opacity-0 animate-fade-in group hover:shadow-2xl hover:border-[#4B70F5]/30" style="animation-delay: 0.3s;">
+                <div class="absolute top-4 right-4 w-8 h-8 text-[#4C3BCF] group-hover:text-[#3DC2EC] transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                </div>
+                <p class="text-xl font-semibold text-[#402E7A] font-serif">AWS: Machine Learning Specialty Training</p>
+                <p class="text-gray-500 text-sm mt-2">Apr 2021</p>
+                <div class="flex flex-wrap gap-3 mt-4">
+                    <span class="px-3 py-1 bg-[#4B70F5]/10 text-[#4C3BCF] text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-[#4B70F5]/20 hover:to-[#3DC2EC]/20 hover:shadow-sm transition-all duration-300">
+                        Machine Learning
+                        <span class="absolute hidden group-hover/tag:block bg-[#402E7A] text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Data Analysis & ML</span>
+                    </span>
+                </div>
+                <a href="https://drive.google.com/drive/folders/171xsH-blzjXlkRIeLDzQEOEX14kWkaCz?usp=sharing" class="text-[#4B70F5] hover:text-[#3DC2EC] font-medium mt-4 inline-block relative group/link">
+                    View Certificates
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#4B70F5] to-[#3DC2EC] group-hover/link:w-full transition-all duration-300"></span>
+                </a>
+            </div>
+            <!-- IBM-->
+            <div class="cert-card bg-white/70 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-gray-100/50 transform transition-all duration-500 ease-out opacity-0 animate-fade-in group hover:shadow-2xl hover:border-[#4B70F5]/30" style="animation-delay: 0.3s;">
+                <div class="absolute top-4 right-4 w-8 h-8 text-[#4C3BCF] group-hover:text-[#3DC2EC] transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                </div>
+                <p class="text-xl font-semibold text-[#402E7A] font-serif">IBM, Data Science Professional Certificate</p>
+                <p class="text-gray-500 text-sm mt-2">July 2019</p>
+                <div class="flex flex-wrap gap-3 mt-4">
+                    <span class="px-3 py-1 bg-[#4B70F5]/10 text-[#4C3BCF] text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-[#4B70F5]/20 hover:to-[#3DC2EC]/20 hover:shadow-sm transition-all duration-300">
+                        Data Science
+                        <span class="absolute hidden group-hover/tag:block bg-[#402E7A] text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Data Analysis & ML</span>
+                    </span>
+                </div>
+                <a href="https://www.credly.com/badges/451d4c51-3534-4f14-b18f-9b382db351a6/public_url" class="text-[#4B70F5] hover:text-[#3DC2EC] font-medium mt-4 inline-block relative group/link">
+                    View Certificate
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#4B70F5] to-[#3DC2EC] group-hover/link:w-full transition-all duration-300"></span>
+                </a>
+            </div>
+            <!-- Data Camp -->
+            <div class="cert-card bg-white/70 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-gray-100/50 transform transition-all duration-500 ease-out opacity-0 animate-fade-in group hover:shadow-2xl hover:border-[#4B70F5]/30" style="animation-delay: 0.4s;">
+                <div class="absolute top-4 right-4 w-8 h-8 text-[#4C3BCF] group-hover:text-[#3DC2EC] transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <p class="text-xl font-semibold text-[#402E7A] font-serif">Data Camp: Data Scientist with Python</p>
+                <p class="text-gray-500 text-sm mt-2">Sep 2019</p>
+                <div class="flex flex-wrap gap-3 mt-4">
+                    <span class="px-3 py-1 bg-[#4B70F5]/10 text-[#4C3BCF] text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-[#4B70F5]/20 hover:to-[#3DC2EC]/20 hover:shadow-sm transition-all duration-300">
+                        Python
+                        <span class="absolute hidden group-hover/tag:block bg-[#402E7A] text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Programming Language</span>
+                    </span>
+                </div>
+                <a href="https://drive.google.com/file/d/1uQ68Ccu2KtiI6LOmRMEiIMsoibtD3_hu/view?usp=sharing" class="text-[#4B70F5] hover:text-[#3DC2EC] font-medium mt-4 inline-block relative group/link">
+                    View Certificate
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#4B70F5] to-[#3DC2EC] group-hover/link:w-full transition-all duration-300"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <style>
+        @keyframes fade-in {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fade-in 0.7s ease-out forwards;
+        }
+        .cert-card:hover {
+            transform: perspective(1000px) rotateX(2deg) rotateY(2deg);
+        }
+    </style>
+    </section>
+
+    <!-- Publications & Articles Section -->
+    <section id="publications" class="py-20 bg-gradient-to-b from-gray-100 to-white relative">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <h2 class="text-5xl font-serif font-bold text-[#402E7A] mb-16 text-center tracking-tight relative">
+                <span class="relative inline-block">
+                    Publications & Articles
+                    <span class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-[#4B70F5] to-[#3DC2EC] opacity-70"></span>
+                </span>
+            </h2>
+            <div class="space-y-8">
+                <div class="pub-card bg-white p-6 rounded-2xl shadow-sm border border-gray-200/50 transition-all duration-500 ease-out opacity-0 animate-fade-in group hover:shadow-md hover:border-[#4B70F5]/30" style="animation-delay: 0.1s;">
+                    <div class="absolute top-4 right-4 w-8 h-8 text-[#4C3BCF] group-hover:text-[#3DC2EC] transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <p class="text-xl font-semibold text-[#402E7A] font-serif">Synthesis of Adversarial DDOS Attacks Using Tabular Generative Adversarial Networks</p>
+                    <p class="text-gray-500 text-sm mt-2">Paper with Code</p>
+                    <div class="flex flex-wrap gap-3 mt-4">
+                        <span class="px-3 py-1 bg-[#4B70F5]/10 text-[#4C3BCF] text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-[#4B70F5]/20 hover:to-[#3DC2EC]/20 hover:shadow-sm transition-all duration-300">
+                            GANs
+                            <span class="absolute hidden group-hover/tag:block bg-[#402E7A] text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Generative Adversarial Networks</span>
+                        </span>
+                        <span class="px-3 py-1 bg-[#4B70F5]/10 text-[#4C3BCF] text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-[#4B70F5]/20 hover:to-[#3DC2EC]/20 hover:shadow-sm transition-all duration-300">
+                            Cybersecurity
+                            <span class="absolute hidden group-hover/tag:block bg-[#402E7A] text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Network Security</span>
+                        </span>
+                    </div>
+                    <a href="https://paperswithcode.com/paper/synthesis-of-adversarial-ddos-attacks-using" class="text-[#4B70F5] hover:text-[#3DC2EC] font-medium mt-4 inline-block relative group/link">
+                        View Publication
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#4B70F5] to-[#3DC2EC] group-hover/link:w-full transition-all duration-300"></span>
+                    </a>
+                </div>
+                <div class="pub-card bg-white p-6 rounded-2xl shadow-sm border border-gray-200/50 transition-all duration-500 ease-out opacity-0 animate-fade-in group hover:shadow-md hover:border-[#4B70F5]/30" style="animation-delay: 0.2s;">
+                    <div class="absolute top-4 right-4 w-8 h-8 text-[#4C3BCF] group-hover:text-[#3DC2EC] transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                        </svg>
+                    </div>
+                    <p class="text-xl font-semibold text-[#402E7A] font-serif">Leukemia Detection Based on Microscopic Blood Smear Images Using Deep Learning</p>
+                    <p class="text-gray-500 text-sm mt-2">arXiv.org</p>
+                    <div class="flex flex-wrap gap-3 mt-4">
+                        <span class="px-3 py-1 bg-[#4B70F5]/10 text-[#4C3BCF] text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-[#4B70F5]/20 hover:to-[#3DC2EC]/20 hover:shadow-sm transition-all duration-300">
+                            Deep Learning
+                            <span class="absolute hidden group-hover/tag:block bg-[#402E7A] text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Neural Networks</span>
+                        </span>
+                        <span class="px-3 py-1 bg-[#4B70F5]/10 text-[#4C3BCF] text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-[#4B70F5]/20 hover:to-[#3DC2EC]/20 hover:shadow-sm transition-all duration-300">
+                            Medical Imaging
+                            <span class="absolute hidden group-hover/tag:block bg-[#402E7A] text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Image Analysis</span>
+                        </span>
+                    </div>
+                    <a href="https://arxiv.org/abs/2301.03367" class="text-[#4B70F5] hover:text-[#3DC2EC] font-medium mt-4 inline-block relative group/link">
+                        View Publication
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#4B70F5] to-[#3DC2EC] group-hover/link:w-full transition-all duration-300"></span>
+                    </a>
+                </div>
+                <div class="pub-card bg-white p-6 rounded-2xl shadow-sm border border-gray-200/50 transition-all duration-500 ease-out opacity-0 animate-fade-in group hover:shadow-md hover:border-[#4B70F5]/30" style="animation-delay: 0.3s;">
+                    <div class="absolute top-4 right-4 w-8 h-8 text-[#4C3BCF] group-hover:text-[#3DC2EC] transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <p class="text-xl font-semibold text-[#402E7A] font-serif">The Power of Knowledge: Building Knowledge Base by Extracting Facts from Wikipedia Tables</p>
+                    <p class="text-gray-500 text-sm mt-2">Medium</p>
+                    <div class="flex flex-wrap gap-3 mt-4">
+                        <span class="px-3 py-1 bg-[#4B70F5]/10 text-[#4C3BCF] text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-[#4B70F5]/20 hover:to-[#3DC2EC]/20 hover:shadow-sm transition-all duration-300">
+                            Knowledge Base
+                            <span class="absolute hidden group-hover/tag:block bg-[#402E7A] text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Data Extraction</span>
+                        </span>
+                        <span class="px-3 py-1 bg-[#4B70F5]/10 text-[#4C3BCF] text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-[#4B70F5]/20 hover:to-[#3DC2EC]/20 hover:shadow-sm transition-all duration-300">
+                            NLP
+                            <span class="absolute hidden group-hover/tag:block bg-[#402E7A] text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Natural Language Processing</span>
+                        </span>
+                    </div>
+                    <a href="https://medium.com/@abdelmageed271/the-power-of-knowledge-a7e1efa12f28" class="text-[#4B70F5] hover:text-[#3DC2EC] font-medium mt-4 inline-block relative group/link">
+                        View Publication
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#4B70F5] to-[#3DC2EC] group-hover/link:w-full transition-all duration-300"></span>
+                    </a>
+                </div>
+                <div class="pub-card bg-white p-6 rounded-2xl shadow-sm border border-gray-200/50 transition-all duration-500 ease-out opacity-0 animate-fade-in group hover:shadow-md hover:border-[#4B70F5]/30" style="animation-delay: 0.4s;">
+                    <div class="absolute top-4 right-4 w-8 h-8 text-[#4C3BCF] group-hover:text-[#3DC2EC] transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                        </svg>
+                    </div>
+                    <p class="text-xl font-semibold text-[#402E7A] font-serif">Building Knowledge Base from Scratch by Extracting Facts from Wikipedia Infobox</p>
+                    <p class="text-gray-500 text-sm mt-2">Medium</p>
+                    <div class="flex flex-wrap gap-3 mt-4">
+                        <span class="px-3 py-1 bg-[#4B70F5]/10 text-[#4C3BCF] text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-[#4B70F5]/20 hover:to-[#3DC2EC]/20 hover:shadow-sm transition-all duration-300">
+                            Knowledge Base
+                            <span class="absolute hidden group-hover/tag:block bg-[#402E7A] text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Data Extraction</span>
+                        </span>
+                        <span class="px-3 py-1 bg-[#4B70F5]/10 text-[#4C3BCF] text-xs rounded-full group/tag relative hover:bg-gradient-to-r hover:from-[#4B70F5]/20 hover:to-[#3DC2EC]/20 hover:shadow-sm transition-all duration-300">
+                            NLP
+                            <span class="absolute hidden group-hover/tag:block bg-[#402E7A] text-white text-xs rounded p-2 -top-10 left-1/2 transform -translate-x-1/2 shadow-lg">Natural Language Processing</span>
+                        </span>
+                    </div>
+                    <a href="https://medium.com/@abdelmageed271/building-knowledge-base-from-scratch-fromwikipedia-articles-and-infoboxes-ffaaaf99a897" class="text-[#4B70F5] hover:text-[#3DC2EC] font-medium mt-4 inline-block relative group/link">
+                        View Publication
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#4B70F5] to-[#3DC2EC] group-hover/link:w-full transition-all duration-300"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <style>
+            @keyframes fade-in {
+                0% { opacity: 0; transform: translateY(10px); }
+                100% { opacity: 1; transform: translateY(0); }
+            }
+            .animate-fade-in {
+                animation: fade-in 0.6s ease-out forwards;
+            }
+        </style>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-[#402E7A] text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="section-title text-white"><strong>Get in Touch</strong></h2>
+            <p>Email: <a href="mailto:abdelmageed271@gmail.com" class="underline"><strong>abdelmageed271@gmail.com</strong></a></p>
+            <p>Phone: <a href="tel:+201099120321" class="underline"><strong>+201099120321</strong></a></p>
+            <p class="mt-4">Based in Giza, Egypt</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>© 2025 Abdelmageed Ahmed. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
